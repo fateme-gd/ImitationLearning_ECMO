@@ -17,7 +17,7 @@ KNOBS = [
     ("PCO2",  "action_PCO2 ARTERIAL (mmHg)_changed",  "action_PCO2 ARTERIAL (mmHg)_direction"),
     ("SpO2",  "action_SpO2 (%)_changed",              "action_SpO2 (%)_direction"),
     ("FiO2",  "action_FiO2 - ECMO_changed",           "action_FiO2 - ECMO_direction"),
-    ("etCO2", "action_etCO2 (mmHg)_changed",          "action_etCO2 (mmHg)_direction"),
+    # ("etCO2", "action_etCO2 (mmHg)_changed",          "action_etCO2 (mmHg)_direction"),
 ]
 
 DIR_MAP = {"decrease": 0, "increase": 1}  
@@ -152,7 +152,7 @@ def fit_predict_two_stage_tabpfn(
 
 def main():
     data_dir = Path(__file__).parent
-    df = pd.read_csv(data_dir / "Data/60min_merged_imitation_learning_dataset.csv")
+    df = pd.read_csv(data_dir / "Data/60min_merged_imitation_learning_dataset_new.csv")
 
     if df is None:
         print(f"ERROR: the dataset files were not found in: {data_dir}!")
