@@ -1,11 +1,6 @@
-Logs/
+out/
 Data/
-calibration_outputs/
-comparison_results/
-comparison_results_fixed/
-disagreement_outputs/
 models/
 Plotting/
-shap_results/
 test_scripts/
-SPIBB.py
+NI_prediction/
